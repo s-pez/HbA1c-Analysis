@@ -17,10 +17,11 @@ The main script, HbA1c_Cutoff_Analysis.sas, performs the following:
 - fits logistic regression models with and without age/BMI adjustment
 - examines disparities in diabetes prevalence and screening performance by race/ethnicity
 
-## Files
+## Repository Structure
 
-- HbA1c_Cutoff_Analysis.sas — main SAS program
-- README.md — project description and usage notes
+- [README.md](README.md) — project description and usage notes
+- [SAS Program/HbA1c_Cutoff_Analysis.sas](SAS%20Program/HbA1c_Cutoff_Analysis.sas) — main SAS analysis workflow
+- [Tables/](Tables/) — folder for generated tables and report outputs
 
 ## Requirements
 
@@ -42,6 +43,7 @@ The script produces:
 - ROC analysis and Youden-based cutoff comparison
 - logistic regression results
 - PDF and RTF output reports
+- RTF-format table files stored in [Tables/](Tables/) for sharing and documentation
 
 ## Notes
 
