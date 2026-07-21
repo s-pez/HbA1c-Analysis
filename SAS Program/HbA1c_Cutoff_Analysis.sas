@@ -116,6 +116,8 @@ title "Overlapping HbA1c Distributions: Diabetic vs. Non-Diabetic Adults";
 proc sgplot data=diabetes_screen;
     histogram HbA1c / group=True_Diabetes transparency=0.4 binwidth=0.2;
     density HbA1c / group=True_Diabetes type=kernel;
+    refline 6.5 / axis=x lineattrs=(pattern=dash color=black thickness=2)
+            name="adaline" legendlabel="ADA cutoff (6.5%)";
     xaxis label="HbA1c (%)" max=14;
     yaxis label="Density";
     keylegend / title="True Diabetes Status (0=No, 1=Yes)";
